@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f2ed;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .section-tag {
+    @apply inline-block bg-stone-200 text-xs  px-3 py-1.5  tracking-wide uppercase mb-4;
+  }
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-ink leading-tight;
+  }
+  .section-subtitle {
+    @apply text-gray-600 leading-relaxed mt-4;
+  }
+  .chevron-banner {
+    @apply relative  w-14 h-20 bg-cream-dark flex items-center justify-center [clip-path:polygon(0%_0%,_50%_15%,_100%_0%,_100%_85%,_50%_100%,_0%_85%)];
+  }
+}
